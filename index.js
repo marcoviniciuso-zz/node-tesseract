@@ -13,8 +13,6 @@ const recognizeImage = (file, callback)  => {
 }
 
 const recognizePDF = (file) => {
-    console.log("É UM MALDITO PDF");
-        
     let fileBuffer = fs.readFileSync(file);
     pdf(fileBuffer).then((data) => {
         console.log(data);
